@@ -1,0 +1,10 @@
+.info {
+    text-align: center;
+}
+
+.photo1 {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}

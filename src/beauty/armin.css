@@ -1,0 +1,156 @@
+body {
+    background-color: #182525;
+}
+
+.artist {
+    background: radial-gradient(circle, #0a0a0a, #1b1b1b);
+    color: #f5f5f5;
+    font-family: 'Futura', sans-serif;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+}
+
+.artist::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.2) 100%);
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.artist-image {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.artist-photo {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    border: 3px solid #00eaff;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.8);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.artist-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 234, 255, 1);
+}
+
+.artist-name .name {
+    text-align: center;
+    font-size: 3rem;
+    color: #00eaff;
+    margin: 10px 0;
+    text-shadow: 0 0 15px rgba(0, 234, 255, 0.9);
+    position: relative;
+    z-index: 2;
+}
+
+.artist-genre {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 2;
+}
+
+.artist-bio {
+    margin: 30px 0;
+}
+
+.bio-title {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #00eaff;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.bio-text {
+    line-height: 1.8;
+    color: #d0d0d0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.artist-albums {
+    margin: 30px 0;
+}
+
+.albums-title {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #00eaff;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.album {
+    margin-bottom: 20px;
+}
+
+.album-title {
+    font-size: 1.8rem;
+    color: #00eaff;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.album-description {
+    line-height: 1.8;
+    color: #d0d0d0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.artist-video {
+    margin: 30px 0;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.video-frame:hover {
+    transform: scale(1.05);
+}
+
+.artist-music-player {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.music-player {
+    width: 100%;
+}
+
+.audio-player {
+    width: 100%;
+}

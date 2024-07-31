@@ -1,0 +1,43 @@
+.business-card {
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .business-card img {
+    width: 240px;
+    height: 240px; 
+    border-radius: 15px; 
+    margin-right: 20px; 
+  }
+  
+  .business-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .business-card h1 {
+    font-size: 20px; 
+    color: #333;
+    margin: 0 0 10px 0;
+    font-weight: bold; 
+    text-align: center; 
+  }
+  
+  .business-card .paragraph {
+    font-size: 16px;
+    color: #555;
+    margin: 2px 0;
+    text-align: center; 
+  }
